@@ -6,9 +6,8 @@ import Projects from './components/Projects';
 function App() {
   return (
     <div className='App'>
-      <Navbar></Navbar>
+      {/* <Navbar></Navbar> */}
       <Hero></Hero>
-      <Projects></Projects>
     </div>
   );
 }
