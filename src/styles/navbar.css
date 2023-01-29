@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #dd2c00;
+}
+
 .navbar {
   background-color: #333;
   background-color: rgba(20, 20, 20, 0.8);
