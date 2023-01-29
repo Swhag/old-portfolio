@@ -1,0 +1,26 @@
+.side-links-container {
+  width: 160px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  position: fixed;
+  top: 35%;
+}
+
+.side-links {
+  background-color: #000;
+  color: #fff;
+  height: 50px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 0 8px;
+}
+
+.side-links i {
+  font-size: 2rem;
+}
