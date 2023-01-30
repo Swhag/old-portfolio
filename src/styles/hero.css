@@ -10,9 +10,9 @@
 }
 
 .hero-inner {
-  color: #fff;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  color: var(--text-color);
+  border-top: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
 
   width: 700px;
   height: 300px;
@@ -32,7 +32,7 @@
 }
 
 .hero-inner h1 span {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .hero-inner p {
@@ -41,23 +41,35 @@
 }
 
 .button-wrapper {
-  border: 1px solid #fff;
-  border-radius: 10px;
+  border: 1px solid var(--text-color);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+}
+
+.button-wrapper div {
+  width: 33.33%;
+  color: var(--text-color);
 }
 
 .button-wrapper button {
   border: none;
   background-color: transparent;
-
-  color: #fff;
-  letter-spacing: 5px;
+  width: 100%;
+  height: 100%;
   padding: 24px 40px;
 
-  transition: all 200ms ease-in-out;
+  color: var(--text-color);
+  letter-spacing: 5px;
+
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
 }
 
-.button-wrapper button:not(:last-child) {
-  border-right: 1px solid #fff;
+.button-wrapper div:not(:last-child) {
+  border-right: 1px solid var(--text-color);
 }
 
 .button-wrapper button:hover {
@@ -66,9 +78,9 @@
 
 @media (max-width: 768px) {
   .hero-inner {
-    color: #fff;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+    color: var(--text-color);
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
 
     width: 100%;
     height: 300px;
@@ -91,14 +103,19 @@
   }
 
   .button-wrapper {
-    border: 1px solid #fff;
-    border-radius: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
+    width: 90%;
   }
 
-  .button-wrapper button:not(:last-child) {
+  .button-wrapper div {
+    width: 100%;
+  }
+
+  .button-wrapper div:not(:last-child) {
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--text-color);
   }
 }

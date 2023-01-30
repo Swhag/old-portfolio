@@ -11,10 +11,15 @@ function Hero(props) {
         <p>Welcome to my portfolio page</p>
       </div>
       <div className='button-wrapper'>
-        <button>ABOUT</button>
-        <button>PROJECTS</button>
-        <button>MINI-PROJECTS</button>
-        <button>CONTACT</button>
+        <div>
+          <button>ABOUT</button>
+        </div>
+        <div>
+          <button>PROJECTS</button>
+        </div>
+        <div>
+          <button>MINI-PROJECTS</button>
+        </div>
       </div>
     </div>
   );
