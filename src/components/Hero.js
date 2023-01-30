@@ -2,8 +2,10 @@ import React from 'react';
 import '../styles/hero.css';
 
 function Hero(props) {
+  const { scrollToSection, hero, about, projects } = props;
+
   return (
-    <div className='hero'>
+    <div className='hero' ref={hero}>
       <div className='hero-inner'>
         <h1>
           Hi, I'm <span>Caleb</span>
@@ -12,10 +14,10 @@ function Hero(props) {
       </div>
       <div className='button-wrapper'>
         <div>
-          <button>ABOUT</button>
+          <button onClick={() => scrollToSection(about)}>ABOUT</button>
         </div>
         <div>
-          <button>PROJECTS</button>
+          <button onClick={() => scrollToSection(projects)}>PROJECTS</button>
         </div>
         <div>
           <button>MINI-PROJECTS</button>

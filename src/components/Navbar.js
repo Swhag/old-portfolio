@@ -2,12 +2,14 @@ import React from 'react';
 import '../styles/navbar.css';
 
 function Navbar(props) {
+  const { scrollToSection, hero, about, projects } = props;
+
   return (
     <div className='navbar'>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
+        <li onClick={() => scrollToSection(hero)}>Home</li>
+        <li onClick={() => scrollToSection(about)}>About</li>
+        <li onClick={() => scrollToSection(projects)}>Projects</li>
         <li>Mini-Projects</li>
       </ul>
     </div>
