@@ -1,6 +1,5 @@
 .projects-section {
   width: 100%;
-  height: 110vh;
   margin-bottom: 200px;
 }
 
@@ -40,7 +39,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 180px;
+  gap: 80px;
 }
 
 .project-right {
@@ -48,7 +47,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 40px;
 }
 
 .project-left {
@@ -56,11 +55,10 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 40px;
 }
 
 .project-info {
-  /* background-color: rgba(0, 0, 0, 0.2); */
   width: 30%;
   height: 440px;
 
@@ -129,8 +127,8 @@ i {
 }
 
 .video-overlay {
-  width: 750px;
-  height: 400px;
+  width: 650px;
+  height: 340px;
   position: relative;
   background-color: teal;
 }
@@ -161,22 +159,32 @@ i {
   .project-right {
     width: 100%;
     flex-direction: column;
-    gap: 50px;
+    gap: 10px;
   }
 
   .project-left {
     width: 100%;
     flex-direction: column-reverse;
-    gap: 50px;
+    gap: 10px;
   }
 
   .project-info {
     width: 100%;
+    padding: 0 14px 0 14px;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .project-description {
+    width: 100%;
+    margin: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 0 14px 0 14px;
+    gap: 20px;
+  }
+
+  .project-description p {
+    margin-right: 0px;
   }
 
   .video-overlay {
