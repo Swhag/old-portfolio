@@ -44,8 +44,8 @@ function Projects(props) {
                   href='https://github.com/Swhag/React-E-Commerce-App'
                   target='_blank'
                 >
-                  <i className='fa-solid fa-code'></i>
                   <span>Code</span>
+                  <i className='fa-solid fa-code'></i>
                 </a>
               </div>
             </div>
@@ -100,8 +100,8 @@ function Projects(props) {
                   href='https://github.com/Swhag/Resume-Builder-App'
                   target='_blank'
                 >
-                  <i className='fa-solid fa-code'></i>
                   <span>Code</span>
+                  <i className='fa-solid fa-code'></i>
                 </a>
               </div>
             </div>

@@ -60,14 +60,45 @@
 }
 
 .project-info {
-  width: 25%;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  width: 30%;
+  height: 440px;
+
+  padding: 10px 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.project-description {
+  width: 100%;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-description h3 {
+  margin-top: 20px;
+}
+
+.project-description p {
+  margin-right: 40px;
+}
+
+.project-description h4 {
+  margin: 20px 0;
+}
+
+.project-description ul li {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
 .button-group {
-  margin: 0 auto;
+  margin: 20px auto;
   display: flex;
   gap: 20px;
 }
@@ -89,32 +120,12 @@
 }
 
 .btn i {
-  margin-right: 6px;
+  margin-left: 6px;
 }
 
 .btn span,
 i {
   color: var(--text-color);
-}
-
-.project-description h3 {
-  margin-top: 20px;
-}
-
-.project-description h4 {
-  padding: 20px 0 15px 5px;
-}
-
-.project-description {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.project-description ul li {
-  list-style-type: disc;
-  list-style-position: inside;
-  margin-bottom: 5px;
 }
 
 .video-overlay {
