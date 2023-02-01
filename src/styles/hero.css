@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 60px;
 }
 
 .hero-inner {
@@ -41,7 +41,7 @@
 }
 
 .button-wrapper {
-  border: 1px solid var(--text-color);
+  /* border: 1px solid var(--text-color); */
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -103,7 +103,7 @@
   }
 
   .button-wrapper {
-    border: 1px solid var(--text-color);
+    /* border: 1px solid var(--text-color); */
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -116,6 +116,55 @@
 
   .button-wrapper div:not(:last-child) {
     border: none;
-    border-bottom: 1px solid var(--text-color);
+    /* border-bottom: 1px solid var(--text-color); */
+  }
+}
+
+/* -------------------------------- */
+/* mobile icons styling */
+/* -------------------------------- */
+
+.mobile-icons {
+  color: var(--text-color);
+  gap: 20px;
+  display: none;
+}
+
+.mobile-icons i {
+  background-color: #424242;
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.7rem;
+  border-radius: 50%;
+}
+
+.mobile-icons .fa-linkedin {
+  background-color: var(--text-color);
+  color: #0072b1;
+}
+
+.mobile-icons .fa-github {
+  background-color: var(--text-color);
+  color: #212121;
+}
+
+.mobile-icons .fa-file-lines {
+  background-color: var(--text-color);
+  color: #0088a3;
+}
+
+.mobile-icons .fa-envelope {
+  background-color: var(--text-color);
+  color: #424242;
+}
+
+@media (max-width: 768px) {
+  .mobile-icons {
+    display: flex;
   }
 }

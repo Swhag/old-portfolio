@@ -31,13 +31,13 @@ function About(props) {
             </div>
 
             <div className='icon-block'>
-              <i className='devicon-javascript-plain colored'></i>
-              <span>JavaScript</span>
+              <i className='devicon-css3-plain-wordmark colored'></i>
+              <span>CSS</span>
             </div>
 
             <div className='icon-block'>
-              <i className='devicon-css3-plain-wordmark colored'></i>
-              <span>CSS</span>
+              <i className='devicon-javascript-plain colored'></i>
+              <span>JavaScript</span>
             </div>
 
             <div className='icon-block'>

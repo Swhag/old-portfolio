@@ -96,7 +96,7 @@
 }
 
 .button-group {
-  margin: 20px auto;
+  margin: 40px auto;
   display: flex;
   gap: 20px;
 }
@@ -151,8 +151,9 @@ i {
 
 @media (max-width: 768px) {
   .projects-container {
-    margin-top: 50px;
     width: 100%;
+    margin-top: 50px;
+    padding: 0px 20px 0px 20px;
     gap: 280px;
   }
 
@@ -183,8 +184,38 @@ i {
     gap: 20px;
   }
 
+  .project-description h3 {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+
+  .project-description h4 {
+    font-size: 0.9rem;
+  }
+
   .project-description p {
     margin-right: 0px;
+    font-size: 0.8rem;
+  }
+
+  .project-description ul li {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    list-style-type: disc;
+    list-style-position: outside;
+  }
+
+  .button-group {
+    margin: 10px auto;
+    display: flex;
+    gap: 16px;
+  }
+
+  .btn {
+    padding: 7px 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
   }
 
   .video-overlay {

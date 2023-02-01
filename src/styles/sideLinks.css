@@ -86,3 +86,9 @@
 .fa-file-lines {
   margin-left: 3px;
 }
+
+@media (max-width: 768px) {
+  .side-links-container {
+    display: none;
+  }
+}
