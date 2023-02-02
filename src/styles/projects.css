@@ -221,15 +221,13 @@ i {
   .video-overlay {
     width: 100%;
     height: auto;
-    position: relative;
-    background-color: teal;
+    position: static;
+    background-color: transparent;
   }
 
   .video-right,
   .video-left {
-    top: 0;
-    left: 0;
-    position: absolute;
+    position: static;
     width: 100%;
     height: auto;
   }
