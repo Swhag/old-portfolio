@@ -19,11 +19,13 @@ function Projects(props) {
   });
 
   useEffect(() => {
-    if (width <= 1024) {
-      setMobile(true);
-    } else {
-      setMobile(false);
-    }
+    return () => {
+      if (width <= 1024) {
+        setMobile(true);
+      } else {
+        setMobile(false);
+      }
+    };
   }, [width]);
 
   return (
