@@ -7,25 +7,23 @@ function Projects(props) {
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    function checkWidth() {
+    function handleResize() {
       setWidth(window.innerWidth);
     }
 
-    window.addEventListener('resize', checkWidth);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener('resize', checkWidth);
+      window.removeEventListener('resize', handleResize);
     };
   });
 
   useEffect(() => {
-    return () => {
-      if (width <= 1024) {
-        setMobile(true);
-      } else {
-        setMobile(false);
-      }
-    };
+    if (width <= 1024) {
+      setMobile(true);
+    } else {
+      setMobile(false);
+    }
   }, [width]);
 
   return (

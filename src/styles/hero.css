@@ -163,7 +163,7 @@
   color: #424242;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .mobile-icons {
     display: flex;
   }
