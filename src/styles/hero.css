@@ -41,7 +41,6 @@
 }
 
 .button-wrapper {
-  /* border: 1px solid var(--text-color); */
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -103,7 +102,6 @@
   }
 
   .button-wrapper {
-    /* border: 1px solid var(--text-color); */
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -116,7 +114,6 @@
 
   .button-wrapper div:not(:last-child) {
     border: none;
-    /* border-bottom: 1px solid var(--text-color); */
   }
 }
 

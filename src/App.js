@@ -12,6 +12,7 @@ function App() {
   const hero = useRef(null);
   const about = useRef(null);
   const projects = useRef(null);
+  const miniProjects = useRef(null);
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -27,6 +28,7 @@ function App() {
         hero={hero}
         about={about}
         projects={projects}
+        miniProjects={miniProjects}
       ></Hero>
       <SideLinks></SideLinks>
       <Navbar
@@ -34,10 +36,11 @@ function App() {
         hero={hero}
         about={about}
         projects={projects}
+        miniProjects={miniProjects}
       ></Navbar>
       <About about={about}></About>
       <Projects projects={projects}></Projects>
-      <MiniProjects></MiniProjects>
+      <MiniProjects miniProjects={miniProjects}></MiniProjects>
     </div>
   );
 }

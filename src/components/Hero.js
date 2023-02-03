@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/hero.css';
 
 function Hero(props) {
-  const { scrollToSection, hero, about, projects } = props;
+  const { scrollToSection, hero, about, projects, miniProjects } = props;
 
   return (
     <div className='hero' ref={hero}>
@@ -20,7 +20,9 @@ function Hero(props) {
           <button onClick={() => scrollToSection(projects)}>PROJECTS</button>
         </div>
         <div>
-          <button>MINI-PROJECTS</button>
+          <button onClick={() => scrollToSection(miniProjects)}>
+            MINI-PROJECTS
+          </button>
         </div>
       </div>
       <MobileIcons></MobileIcons>
