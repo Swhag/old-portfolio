@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import SideLinks from './components/SideLinks';
 import About from './components/About';
 import Projects from './components/Projects';
+import MiniProjects from './components/MiniProjects';
 
 function App() {
   const hero = useRef(null);
@@ -36,6 +37,7 @@ function App() {
       ></Navbar>
       <About about={about}></About>
       <Projects projects={projects}></Projects>
+      <MiniProjects></MiniProjects>
     </div>
   );
 }

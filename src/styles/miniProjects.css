@@ -1,0 +1,35 @@
+.mini-project-section {
+  width: 100%;
+  margin-bottom: 220px;
+}
+
+/* -------------------------------- */
+/* header */
+/* -------------------------------- */
+
+.mini-project-header h2 {
+  border-bottom: 1px solid var(--secondary-color);
+  width: 100%;
+  padding-top: 90px;
+  line-height: 0.1em;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.mini-project-header h2 span {
+  background-color: var(--primary-color);
+  color: #e6e6e6;
+  padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .mini-project-section {
+    margin-bottom: 20px;
+  }
+
+  .mini-project-header h2 {
+    padding-top: 90px;
+    font-size: 1.3rem;
+  }
+}
