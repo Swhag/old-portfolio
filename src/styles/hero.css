@@ -122,13 +122,11 @@
 /* -------------------------------- */
 
 .mobile-icons {
-  color: var(--text-color);
   gap: 20px;
   display: none;
 }
 
 .mobile-icons i {
-  background-color: #424242;
   width: 45px;
   height: 45px;
 
@@ -136,28 +134,33 @@
   justify-content: center;
   align-items: center;
 
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   border-radius: 50%;
+  border: 2px solid var(--text-color);
 }
 
 .mobile-icons .fa-linkedin {
-  background-color: var(--text-color);
-  color: #0072b1;
+  /* background-color: var(--text-color);
+  color: #0072b1; */
+  color: var(--text-color);
 }
 
 .mobile-icons .fa-github {
-  background-color: var(--text-color);
-  color: #212121;
+  /* background-color: var(--text-color);
+  color: #212121; */
+  color: var(--text-color);
 }
 
 .mobile-icons .fa-file-lines {
-  background-color: var(--text-color);
-  color: #0088a3;
+  /* background-color: var(--text-color);
+  color: #0088a3; */
+  color: var(--text-color);
 }
 
 .mobile-icons .fa-envelope {
-  background-color: var(--text-color);
-  color: #424242;
+  /* background-color: var(--text-color);
+  color: #424242; */
+  color: var(--text-color);
 }
 
 @media (max-width: 1024px) {
