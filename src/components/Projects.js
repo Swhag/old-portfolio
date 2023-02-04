@@ -63,41 +63,31 @@ function Project1(props) {
   return (
     <div className='project-right'>
       <div className='project-info'>
-        <div className='project-description'>
-          <h3>E-Commerce Web App</h3>
-          <p>
-            Simple E-Commerce Web Application built with ReactJS, Redux, Axios,
-            React Router and Bootstrap to strap everything together.
-          </p>
+        <h3>E-Commerce Website</h3>
+        <p>
+          Simple E-Commerce Web Application built with ReactJS, Redux, Axios,
+          React Router and Bootstrap.
+        </p>
 
-          {mobile === true ? video1 : null}
+        {mobile === true ? video1 : null}
 
-          <ul>
-            <h4>Features</h4>
-            <li>Clean user interface with smooth animations</li>
-            <li>Add and remove products from the shopping cart</li>
-            <li>Filter products by categories</li>
-            <li>Responsive design</li>
-          </ul>
-
-          <div className='button-group'>
-            <div className='btn'>
-              <a
-                href='https://swhag.github.io/React-E-Commerce-App/'
-                target='_blank'
-              >
-                <span>Live App</span>
-              </a>
-            </div>
-            <div className='btn'>
-              <a
-                href='https://github.com/Swhag/React-E-Commerce-App'
-                target='_blank'
-              >
-                <span>Code</span>
-                <i className='fa-solid fa-code'></i>
-              </a>
-            </div>
+        <div className='button-group'>
+          <div className='btn'>
+            <a
+              href='https://swhag.github.io/React-E-Commerce-App/'
+              target='_blank'
+            >
+              <span>Live App</span>
+            </a>
+          </div>
+          <div className='btn'>
+            <a
+              href='https://github.com/Swhag/React-E-Commerce-App'
+              target='_blank'
+            >
+              <span>Code</span>
+              <i className='fa-solid fa-code'></i>
+            </a>
           </div>
         </div>
       </div>
@@ -128,44 +118,31 @@ function Project2(props) {
       {mobile === false ? video2 : null}
 
       <div className='project-info'>
-        <div className='project-description'>
-          <h3>Resumer Builder Web App</h3>
-          <p>
-            Resume-Builder Web Application with minimalist design. Built using
-            ReactJS, React-to-print, UUID library and CSS.
-          </p>
+        <h3>Resumer Builder App</h3>
+        <p>
+          Resume-Builder Web Application with minimalist design. Built using
+          ReactJS, React-to-print, UUID library and CSS.
+        </p>
 
-          {mobile === true ? video2 : null}
+        {mobile === true ? video2 : null}
 
-          <ul>
-            <h4>Features</h4>
-            <li>
-              Real-time rendering of Resume Input and Output using State
-              management
-            </li>
-            <li>Generate PDF (targets CV preview component only)</li>
-            <li>Clean user interface with smooth animations (vanilla CSS)</li>
-            <li>Responsive design (mobile friendly UI)</li>
-          </ul>
-
-          <div className='button-group'>
-            <div className='btn'>
-              <a
-                href='https://swhag.github.io/Resume-Builder-App/'
-                target='_blank'
-              >
-                <span>Live App</span>
-              </a>
-            </div>
-            <div className='btn'>
-              <a
-                href='https://github.com/Swhag/Resume-Builder-App'
-                target='_blank'
-              >
-                <span>Code</span>
-                <i className='fa-solid fa-code'></i>
-              </a>
-            </div>
+        <div className='button-group'>
+          <div className='btn'>
+            <a
+              href='https://swhag.github.io/Resume-Builder-App/'
+              target='_blank'
+            >
+              <span>Live App</span>
+            </a>
+          </div>
+          <div className='btn'>
+            <a
+              href='https://github.com/Swhag/Resume-Builder-App'
+              target='_blank'
+            >
+              <span>Code</span>
+              <i className='fa-solid fa-code'></i>
+            </a>
           </div>
         </div>
       </div>
@@ -193,40 +170,25 @@ function Project3(props) {
   return (
     <div className='project-right'>
       <div className='project-info'>
-        <div className='project-description'>
-          <h3>Simple Weather App</h3>
-          <p>
-            Simple weather Web App build using HTML/CSS/JavaScript. Utilized
-            JavaScript Async/Await function, API fetch calls and DOM
-            manipulation.
-          </p>
+        <h3>Simple Weather App</h3>
+        <p>
+          Simple weather Web App build using HTML/CSS/JavaScript. Utilized
+          JavaScript Async/Await function, API fetch calls and DOM manipulation.
+        </p>
 
-          {mobile === true ? video3 : null}
+        {mobile === true ? video3 : null}
 
-          <ul>
-            <h4>Features</h4>
-            <li>
-              Search location to load forecast data (OpenWeatherMap API calls)
-            </li>
-            <li>Display daily forecast data for a given location</li>
-            <li>Display data in metric / imperial units</li>
-            <li>
-              RRender appropriate weather icons for each forecast description
-            </li>
-          </ul>
-
-          <div className='button-group'>
-            <div className='btn'>
-              <a href='https://swhag.github.io/Weather-App/' target='_blank'>
-                <span>Live App</span>
-              </a>
-            </div>
-            <div className='btn'>
-              <a href='https://github.com/Swhag/Weather-App' target='_blank'>
-                <span>Code</span>
-                <i className='fa-solid fa-code'></i>
-              </a>
-            </div>
+        <div className='button-group'>
+          <div className='btn'>
+            <a href='https://swhag.github.io/Weather-App/' target='_blank'>
+              <span>Live App</span>
+            </a>
+          </div>
+          <div className='btn'>
+            <a href='https://github.com/Swhag/Weather-App' target='_blank'>
+              <span>Code</span>
+              <i className='fa-solid fa-code'></i>
+            </a>
           </div>
         </div>
       </div>

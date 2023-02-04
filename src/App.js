@@ -6,13 +6,13 @@ import Hero from './components/Hero';
 import SideLinks from './components/SideLinks';
 import About from './components/About';
 import Projects from './components/Projects';
-import MiniProjects from './components/MiniProjects';
+import Contact from './components/Contact';
 
 function App() {
   const hero = useRef(null);
   const about = useRef(null);
   const projects = useRef(null);
-  const miniProjects = useRef(null);
+  const contact = useRef(null);
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -28,7 +28,7 @@ function App() {
         hero={hero}
         about={about}
         projects={projects}
-        miniProjects={miniProjects}
+        contact={contact}
       ></Hero>
       <SideLinks></SideLinks>
       <Navbar
@@ -36,11 +36,11 @@ function App() {
         hero={hero}
         about={about}
         projects={projects}
-        miniProjects={miniProjects}
+        contact={contact}
       ></Navbar>
       <About about={about}></About>
       <Projects projects={projects}></Projects>
-      <MiniProjects miniProjects={miniProjects}></MiniProjects>
+      <Contact contact={contact}></Contact>
     </div>
   );
 }
