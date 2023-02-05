@@ -27,7 +27,7 @@ function About(props) {
             <h3>Get to know me!</h3>
             <p>
               Hello! my name is Caleb. I'm a Frontend Web Developer with IT and
-              Cybersecurity background. I'am seeking an entry-level position to
+              Cybersecurity background. I am seeking an entry-level position to
               begin my career in web development within a high-level
               professional environment. Aiming to participate all throughout the
               development process and expand my current skills at the same time.

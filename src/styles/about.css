@@ -1,6 +1,7 @@
 .about-section {
   width: 100%;
   background-color: #fafafa;
+
   padding: 8rem 1rem;
 }
 
@@ -12,7 +13,7 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
   position: relative;
 }
 

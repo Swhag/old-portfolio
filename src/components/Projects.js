@@ -1,54 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../styles/projects.css';
 
 function Projects(props) {
   const { projects } = props;
-  const [mobile, setMobile] = useState(null);
-  const [width, setWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    function handleResize() {
-      setWidth(window.innerWidth);
-    }
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  });
-
-  useEffect(() => {
-    if (width <= 1024) {
-      setMobile(true);
-    } else {
-      setMobile(false);
-    }
-  }, [width]);
 
   return (
     <div className='projects-section' ref={projects}>
       <div className='projects-header'>
-        <h2>
-          <span>Projects</span>
-        </h2>
+        <h1>PROJECTS</h1>
       </div>
-
       <div className='projects-container'>
-        <Project1 mobile={mobile}></Project1>
-        <Project2 mobile={mobile}></Project2>
-        <Project3 mobile={mobile}></Project3>
+        <Project1></Project1>
+        <Project2></Project2>
       </div>
     </div>
   );
 }
 
 function Project1(props) {
-  const { mobile } = props;
-  const video1 = (
-    <div className='video-overlay'>
+  return (
+    <div className='project'>
       <video
-        className='video-right'
+        className='project-video'
         controls
         autoPlay
         muted
@@ -57,51 +30,40 @@ function Project1(props) {
       >
         <source src='../Videos/e-commerce.mp4' type='video/mp4' />
       </video>
-    </div>
-  );
 
-  return (
-    <div className='project-right'>
-      <div className='project-info'>
+      <div className='project-content'>
         <h3>E-Commerce Website</h3>
         <p>
           Simple E-Commerce Web Application built with ReactJS, Redux, Axios,
           React Router and Bootstrap.
         </p>
-
-        {mobile === true ? video1 : null}
-
         <div className='button-group'>
-          <div className='btn'>
-            <a
-              href='https://swhag.github.io/React-E-Commerce-App/'
-              target='_blank'
-            >
-              <span>Live App</span>
-            </a>
-          </div>
-          <div className='btn'>
-            <a
-              href='https://github.com/Swhag/React-E-Commerce-App'
-              target='_blank'
-            >
-              <span>Code</span>
-              <i className='fa-solid fa-code'></i>
-            </a>
-          </div>
+          <a
+            className='btn'
+            href='https://swhag.github.io/React-E-Commerce-App/'
+            target='_blank'
+          >
+            <span>Live App</span>
+          </a>
+          <a
+            className='btn'
+            href='https://github.com/Swhag/React-E-Commerce-App'
+            target='_blank'
+          >
+            <span>Code</span>
+            <i className='fa-solid fa-code'></i>
+          </a>
         </div>
       </div>
-      {mobile === false ? video1 : null}
     </div>
   );
 }
 
 function Project2(props) {
-  const { mobile } = props;
-  const video2 = (
-    <div className='video-overlay'>
+  return (
+    <div className='project'>
       <video
-        className='video-left'
+        className='project-video'
         controls
         autoPlay
         muted
@@ -110,89 +72,31 @@ function Project2(props) {
       >
         <source src='../Videos/CVBuilder.mp4' type='video/mp4' />
       </video>
-    </div>
-  );
 
-  return (
-    <div className='project-left'>
-      {mobile === false ? video2 : null}
-
-      <div className='project-info'>
+      <div className='project-content'>
         <h3>Resumer Builder App</h3>
         <p>
           Resume-Builder Web Application with minimalist design. Built using
           ReactJS, React-to-print, UUID library and CSS.
         </p>
-
-        {mobile === true ? video2 : null}
-
         <div className='button-group'>
-          <div className='btn'>
-            <a
-              href='https://swhag.github.io/Resume-Builder-App/'
-              target='_blank'
-            >
-              <span>Live App</span>
-            </a>
-          </div>
-          <div className='btn'>
-            <a
-              href='https://github.com/Swhag/Resume-Builder-App'
-              target='_blank'
-            >
-              <span>Code</span>
-              <i className='fa-solid fa-code'></i>
-            </a>
-          </div>
+          <a
+            className='btn'
+            href='https://swhag.github.io/Resume-Builder-App/'
+            target='_blank'
+          >
+            <span>Live App</span>
+          </a>
+          <a
+            className='btn'
+            href='https://github.com/Swhag/Resume-Builder-App'
+            target='_blank'
+          >
+            <span>Code</span>
+            <i className='fa-solid fa-code'></i>
+          </a>
         </div>
       </div>
-    </div>
-  );
-}
-
-function Project3(props) {
-  const { mobile } = props;
-  const video3 = (
-    <div className='video-overlay'>
-      <video
-        className='video-right'
-        controls
-        autoPlay
-        muted
-        loop
-        preload='metadata'
-      >
-        <source src='../Videos/WeatherApp.mp4' type='video/mp4' />
-      </video>
-    </div>
-  );
-
-  return (
-    <div className='project-right'>
-      <div className='project-info'>
-        <h3>Simple Weather App</h3>
-        <p>
-          Simple weather Web App build using HTML/CSS/JavaScript. Utilized
-          JavaScript Async/Await function, API fetch calls and DOM manipulation.
-        </p>
-
-        {mobile === true ? video3 : null}
-
-        <div className='button-group'>
-          <div className='btn'>
-            <a href='https://swhag.github.io/Weather-App/' target='_blank'>
-              <span>Live App</span>
-            </a>
-          </div>
-          <div className='btn'>
-            <a href='https://github.com/Swhag/Weather-App' target='_blank'>
-              <span>Code</span>
-              <i className='fa-solid fa-code'></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      {mobile === false ? video3 : null}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 .hero {
   background-image: linear-gradient(to bottom, #4759b0, #1a1a2d);
   width: 100%;
-  max-height: 100vh;
+  max-height: 80vh;
   height: 70rem;
 
   display: flex;
@@ -14,7 +14,6 @@
 
 .hero-inner {
   color: var(--text-color);
-
   width: 700px;
   height: 300px;
   padding: 48px 32px;
@@ -62,7 +61,6 @@
 }
 
 .button-wrapper {
-  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
