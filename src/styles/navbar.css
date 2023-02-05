@@ -1,13 +1,12 @@
 .navbar {
-  background-color: rgba(40, 40, 40, 1);
+  background-color: rgba(255, 255, 255, 1);
 
-  color: var(--text-color);
+  color: #000;
   width: 100%;
   font-size: 1.1rem;
-  opacity: 0.9;
 
   top: 0px;
-  padding: 12px 140px;
+  padding: 16px 140px;
   z-index: 10;
 
   display: flex;

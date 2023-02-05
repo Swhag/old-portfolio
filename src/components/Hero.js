@@ -7,9 +7,7 @@ function Hero(props) {
   return (
     <div className='hero' ref={hero}>
       <div className='hero-inner'>
-        <h1>
-          Hi, I'm <span>Caleb</span>
-        </h1>
+        <h1>HEY, MY NAME IS CALEB</h1>
         <p>Welcome to my portfolio page</p>
       </div>
       <div className='button-wrapper'>

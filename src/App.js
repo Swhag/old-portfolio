@@ -23,6 +23,13 @@ function App() {
 
   return (
     <div className='App'>
+      <Navbar
+        scrollToSection={scrollToSection}
+        hero={hero}
+        about={about}
+        projects={projects}
+        contact={contact}
+      ></Navbar>
       <Hero
         scrollToSection={scrollToSection}
         hero={hero}
@@ -31,13 +38,7 @@ function App() {
         contact={contact}
       ></Hero>
       <SideLinks></SideLinks>
-      <Navbar
-        scrollToSection={scrollToSection}
-        hero={hero}
-        about={about}
-        projects={projects}
-        contact={contact}
-      ></Navbar>
+
       <About about={about}></About>
       <Projects projects={projects}></Projects>
       <Contact contact={contact}></Contact>
