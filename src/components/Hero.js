@@ -22,6 +22,9 @@ function Hero(props) {
         </div>
       </div>
       <MobileIcons></MobileIcons>
+      <div className='mouse-scroll-container'>
+        <div className='mouse'></div>
+      </div>
     </div>
   );
 }

@@ -39,7 +39,11 @@ function App() {
       ></Hero>
       <SideLinks></SideLinks>
 
-      <About about={about}></About>
+      <About
+        scrollToSection={scrollToSection}
+        about={about}
+        contact={contact}
+      ></About>
       <Projects projects={projects}></Projects>
       <Contact contact={contact}></Contact>
     </div>

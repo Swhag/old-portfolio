@@ -1,8 +1,9 @@
 :root {
   --primary-color: #1a1a2d;
-  /* --primary-color: #fff; */
-  --secondary-color: #dd2c00;
-  --text-color: #fff;
+  --secondary-color: #0e1a58;
+  --button-color: #0e1a58;
+  --light-gray-color: #bdbdbd;
+  --text-color: #fafafa;
 }
 
 * {
@@ -35,6 +36,13 @@ li {
   list-style: none;
 }
 
-button {
+.btn {
   cursor: pointer;
+  background: var(--button-color);
+  color: #fff;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
 }
