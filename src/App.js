@@ -45,7 +45,7 @@ function App() {
         contact={contact}
       ></About>
       <Projects projects={projects}></Projects>
-      <Contact contact={contact}></Contact>
+      {/* <Contact contact={contact}></Contact> */}
     </div>
   );
 }

@@ -41,7 +41,6 @@
 .project {
   display: flex;
   margin-bottom: 8rem;
-  padding: 1px;
 }
 
 .project-video {
@@ -95,6 +94,8 @@
   }
 }
 
+/* ------------------------------------- */
+
 .button-group {
   display: flex;
   gap: 10px;
@@ -104,12 +105,15 @@
   padding: 0.7rem 2rem;
   font-size: 0.9rem;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border: 1px solid rgba(255, 255, 255, 0.9);
   background-color: transparent;
   color: var(--text-color);
 
   letter-spacing: 3px;
-
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
 }
@@ -121,4 +125,11 @@
 .button-group .btn i {
   margin-left: 10px;
   font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .button-group .btn {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem;
+  }
 }
