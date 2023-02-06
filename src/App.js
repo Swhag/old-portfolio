@@ -7,6 +7,7 @@ import SideLinks from './components/SideLinks';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const hero = useRef(null);
@@ -46,6 +47,7 @@ function App() {
       ></About>
       <Projects projects={projects}></Projects>
       <Contact contact={contact}></Contact>
+      <Footer></Footer>
     </div>
   );
 }

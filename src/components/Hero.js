@@ -30,39 +30,8 @@ function Hero(props) {
           <button onClick={() => scrollToSection(contact)}>CONTACT</button>
         </div>
       </div>
-      <MobileIcons></MobileIcons>
       <div className={`mouse-scroll-container ${fadeIn}`}>
         <div className='mouse'></div>
-      </div>
-    </div>
-  );
-}
-
-function MobileIcons() {
-  return (
-    <div className='mobile-icons'>
-      <div>
-        <a
-          href='https://www.linkedin.com/in/caleb-kim-76a440209'
-          target='_blank'
-        >
-          <i className='fa-brands fa-linkedin'></i>
-        </a>
-      </div>
-      <div>
-        <a href='https://github.com/Swhag' target='_blank'>
-          <i className='fa-brands fa-github'></i>
-        </a>
-      </div>
-      <div>
-        <a href='https://github.com/Swhag' target='_blank'>
-          <i className='fa-regular fa-file-lines'></i>
-        </a>
-      </div>
-      <div>
-        <a href='https://github.com/Swhag' target='_blank'>
-          <i className='fa-regular fa-envelope'></i>
-        </a>
       </div>
     </div>
   );
