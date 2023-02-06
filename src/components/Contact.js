@@ -1,15 +1,15 @@
 import React from 'react';
-import '../styles/miniProjects.css';
+import '../styles/contact.css';
 
 function Contact(props) {
   const { contact } = props;
 
   return (
-    <div className='mini-project-section' ref={contact}>
-      <div className='mini-project-header'>
-        <h2>
-          <span>Contact</span>
-        </h2>
+    <div className='contact-section' ref={contact}>
+      <div className='contact-container'>
+        <div className='contact-header'>
+          <h1>CONTACT</h1>
+        </div>
       </div>
     </div>
   );

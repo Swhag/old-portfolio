@@ -1,16 +1,25 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import '../styles/hero.css';
 
 function Hero(props) {
   const { scrollToSection, hero, about, projects, contact } = props;
+  const [fadeIn, setFadeIn] = useState('start');
+
+  useEffect(() => {
+    setFadeIn('end');
+
+    return () => {
+      setFadeIn('');
+    };
+  }, []);
 
   return (
     <div className='hero' ref={hero}>
       <div className='hero-inner'>
-        <h1>HEY, MY NAME IS CALEB</h1>
-        <p>Welcome to my portfolio page</p>
+        <h1 className={`name ${fadeIn}`}>Hi, MY NAME IS CALEB</h1>
+        <p className={`welcome ${fadeIn}`}>Welcome to my portfolio page</p>
       </div>
-      <div className='button-wrapper'>
+      <div className={`button-wrapper ${fadeIn}`}>
         <div>
           <button onClick={() => scrollToSection(about)}>ABOUT</button>
         </div>
@@ -22,7 +31,7 @@ function Hero(props) {
         </div>
       </div>
       <MobileIcons></MobileIcons>
-      <div className='mouse-scroll-container'>
+      <div className={`mouse-scroll-container ${fadeIn}`}>
         <div className='mouse'></div>
       </div>
     </div>

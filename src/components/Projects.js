@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/projects.css';
+import { useInView } from 'react-intersection-observer';
 
 function Projects(props) {
   const { projects } = props;
@@ -19,16 +20,14 @@ function Projects(props) {
 }
 
 function Project1(props) {
+  const { ref: project1, inView: myElementIsVisible } = useInView();
+
   return (
-    <div className='project'>
-      <video
-        className='project-video'
-        controls
-        autoPlay
-        muted
-        loop
-        preload='metadata'
-      >
+    <div
+      className={`project ${myElementIsVisible ? 'project-animate' : ''}`}
+      ref={project1}
+    >
+      <video className='project-video' controls muted loop preload='metadata'>
         <source src='../Videos/e-commerce.mp4' type='video/mp4' />
       </video>
 
@@ -61,16 +60,16 @@ function Project1(props) {
 }
 
 function Project2(props) {
+  const { ref: project2, inView: myElementIsVisible } = useInView();
+
   return (
-    <div className='project'>
-      <video
-        className='project-video'
-        controls
-        autoPlay
-        muted
-        loop
-        preload='metadata'
-      >
+    <div
+      className={`project-reverse ${
+        myElementIsVisible ? 'project-animate' : ''
+      }`}
+      ref={project2}
+    >
+      <video className='project-video' controls muted loop preload='metadata'>
         <source src='../Videos/CVBuilder.mp4' type='video/mp4' />
       </video>
 
@@ -103,16 +102,14 @@ function Project2(props) {
 }
 
 function Project3(props) {
+  const { ref: project3, inView: myElementIsVisible } = useInView();
+
   return (
-    <div className='project'>
-      <video
-        className='project-video'
-        controls
-        autoPlay
-        muted
-        loop
-        preload='metadata'
-      >
+    <div
+      className={`project ${myElementIsVisible ? 'project-animate' : ''}`}
+      ref={project3}
+    >
+      <video className='project-video' controls muted loop preload='metadata'>
         <source src='../Videos/WeatherApp.mp4' type='video/mp4' />
       </video>
 

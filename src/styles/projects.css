@@ -1,7 +1,7 @@
 .projects-section {
   width: 100%;
   padding: 8rem 1rem;
-  background-image: linear-gradient(to bottom, #4759b0, #1a1a2d);
+  background-image: linear-gradient(to bottom right, #1a1a2d, #4759b0);
   color: var(--text-color);
 }
 
@@ -38,9 +38,23 @@
   align-items: center;
 }
 
-.project {
+.project,
+.project-reverse {
   display: flex;
   margin-bottom: 8rem;
+  transition: all 0.6s ease-in-out;
+  transform: translateX(-20%);
+  opacity: 0;
+}
+
+.project-reverse {
+  flex-direction: row-reverse;
+  transform: translateX(20%);
+}
+
+.project-animate {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .project-video {
@@ -62,7 +76,7 @@
 
 .project-content p {
   font-size: 1.2rem;
-  color: #bdbdbd;
+  color: #cccccc;
   max-width: 30rem;
   line-height: 1.7;
   margin-bottom: 3rem;
@@ -71,6 +85,10 @@
 @media (max-width: 1024px) {
   .project {
     display: flex;
+    flex-direction: column;
+  }
+
+  .project-reverse {
     flex-direction: column;
   }
 

@@ -1,0 +1,29 @@
+.contact-section {
+  width: 100%;
+  background-color: #fafafa;
+  padding: 8rem 1rem;
+}
+
+/* ------------------------------------- */
+
+.contact-header h1 {
+  display: block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 6rem;
+  position: relative;
+}
+
+.contact-header h1::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  height: 5px;
+  width: 3rem;
+  background: var(--primary-color);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}

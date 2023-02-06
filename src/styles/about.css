@@ -1,7 +1,6 @@
 .about-section {
   width: 100%;
   background-color: #fafafa;
-
   padding: 8rem 1rem;
 }
 
@@ -41,6 +40,22 @@
 .content-left,
 .content-right {
   max-width: 30rem;
+  transition: all 0.8s ease-in-out;
+  opacity: 0;
+}
+
+.content-left {
+  transform: translateX(-30%);
+}
+
+.content-right {
+  transform: translateY(40%);
+}
+
+.content-animate {
+  transform: translateX(0);
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .content-left h3,
@@ -59,6 +74,10 @@
 .content-left button {
   padding: 1rem 3rem;
   font-size: 1rem;
+}
+
+.content-left button:hover {
+  opacity: 0.9;
 }
 
 .skills {
