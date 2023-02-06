@@ -1,6 +1,6 @@
 .projects-section {
   width: 100%;
-  padding: 8rem 1rem;
+  padding: 6rem 1rem;
   background-image: linear-gradient(to bottom right, #1a1a2d, #4759b0);
   color: var(--text-color);
 }
