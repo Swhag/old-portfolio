@@ -17,7 +17,7 @@ function Hero(props) {
     <div className='hero' ref={hero}>
       <div className='hero-inner'>
         <h1 className={`name ${fadeIn}`}>Hi, MY NAME IS CALEB</h1>
-        <p className={`welcome ${fadeIn}`}>Welcome to my portfolio page</p>
+        <p className={`welcome ${fadeIn}`}>Frontend Developer</p>
       </div>
       <div className={`button-wrapper ${fadeIn}`}>
         <div>
