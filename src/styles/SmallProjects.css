@@ -1,0 +1,21 @@
+.small-projects-section {
+  width: 100%;
+  background-color: #fafafa;
+  padding: 3rem 1rem;
+}
+
+.small-projects-container {
+  display: flex;
+  justify-content: center;
+}
+
+.small-project {
+  width: 30rem;
+  height: 30rem;
+
+  border: 1px solid #1a1a2d;
+}
+
+.small-project img {
+  width: 100%;
+}

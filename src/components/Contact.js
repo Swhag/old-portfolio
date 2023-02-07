@@ -1,8 +1,10 @@
 import React from 'react';
 import '../styles/contact.css';
+import { useInView } from 'react-intersection-observer';
 
 function Contact(props) {
   const { contact } = props;
+  const { ref: form, inView: myElementIsVisible } = useInView();
 
   return (
     <div className='contact-section' ref={contact}>
@@ -10,7 +12,7 @@ function Contact(props) {
         <h1>CONTACT</h1>
       </div>
       <div className='contact-form-container'>
-        <form action='#' class='contact-form'>
+        <form action='#' class='contact-form' ref={form}>
           <div>
             <label for='name'>Name</label>
             <input

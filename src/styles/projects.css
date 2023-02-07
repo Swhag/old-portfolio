@@ -1,7 +1,8 @@
 .projects-section {
   width: 100%;
   padding: 6rem 1rem;
-  background-image: linear-gradient(to bottom right, #1a1a2d, #4759b0);
+  background-image: linear-gradient(to top, #4759b0, #1a1a2d);
+
   color: var(--text-color);
 }
 
@@ -41,8 +42,10 @@
 .project,
 .project-reverse {
   display: flex;
-  margin-bottom: 8rem;
-  transition: all 0.6s ease-in-out;
+  margin-bottom: 7rem;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
+
   transform: translateX(-20%);
   opacity: 0;
 }
@@ -88,8 +91,20 @@
     flex-direction: column;
   }
 
+  .project,
+  .project-reverse {
+    margin-bottom: 5rem;
+    transform: translateY(20%);
+    opacity: 0;
+  }
+
   .project-reverse {
     flex-direction: column;
+  }
+
+  .project-animate {
+    transform: translateY(0);
+    opacity: 1;
   }
 
   .project-content {

@@ -40,7 +40,8 @@
 .content-left,
 .content-right {
   max-width: 30rem;
-  transition: all 0.8s ease-in-out;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
   opacity: 0;
 }
 
