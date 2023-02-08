@@ -1,7 +1,7 @@
 .projects-section {
   width: 100%;
   padding: 6rem 1rem;
-  background-image: linear-gradient(to top, #4759b0, #1a1a2d);
+  background-image: linear-gradient(to bottom, #1a1a2d, #4759b0);
 
   color: var(--text-color);
 }
@@ -65,6 +65,8 @@
 }
 
 .project-content {
+  background-color: rgba(0, 0, 0, 0.15);
+
   padding: 2rem 3.5rem;
   display: flex;
   flex-direction: column;

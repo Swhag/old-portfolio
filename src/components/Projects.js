@@ -14,6 +14,7 @@ function Projects(props) {
         <Project1></Project1>
         <Project2></Project2>
         <Project3></Project3>
+        <Project4></Project4>
       </div>
     </div>
   );
@@ -130,6 +131,49 @@ function Project3(props) {
           <a
             className='btn'
             href='https://github.com/Swhag/Weather-App'
+            target='_blank'
+          >
+            <span>Code</span>
+            <i className='fa-solid fa-code'></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Project4(props) {
+  const { ref: project4, inView: myElementIsVisible } = useInView();
+
+  return (
+    <div
+      className={`project-reverse ${
+        myElementIsVisible ? 'project-animate' : ''
+      }`}
+      ref={project4}
+    >
+      <video className='project-video' controls muted loop preload='metadata'>
+        <source src='../Videos/Todo.mp4' type='video/mp4' />
+      </video>
+
+      <div className='project-content'>
+        <h3>To-Do List App</h3>
+        <p>
+          Task management app with ServiceNow type design and layout. Built
+          using HTML/CSS/Javascript. Utilized DOM manipulation and LocalStorage
+          to store data.
+        </p>
+        <div className='button-group'>
+          <a
+            className='btn'
+            href='https://swhag.github.io/Todo-List-App/'
+            target='_blank'
+          >
+            <span>Live App</span>
+          </a>
+          <a
+            className='btn'
+            href='https://github.com/Swhag/Todo-List-App'
             target='_blank'
           >
             <span>Code</span>

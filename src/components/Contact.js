@@ -12,57 +12,58 @@ function Contact(props) {
       <div className='contact-header'>
         <h1>CONTACT</h1>
       </div>
-      <h4
-        className={`contact-form-header ${
-          formIsVisible ? 'contact-form-animate' : ''
-        }`}
-      >
-        If you have an opportunity to share, or would like to discuss anything,
-        please leave your details below.
-      </h4>
-      <div
-        className={`contact-form-container ${
-          formIsVisible ? 'contact-form-animate' : ''
-        }`}
-      >
-        <form action='#' class='contact-form' ref={form}>
-          <div>
-            <label for='name'>Name</label>
-            <input
-              required
-              type='text'
-              class='contact-form-input'
-              name='name'
-              id='name'
-            />
-          </div>
+      <div className='contact-container'>
+        <div className='image-container'></div>
+        <div
+          className={`contact-form-container ${
+            formIsVisible ? 'contact-form-animate' : ''
+          }`}
+        >
+          <form action='#' class='contact-form' ref={form}>
+            <h4>
+              If you have questions or if you would like to say hello, contact
+              me!
+            </h4>
+            <div>
+              <label for='name'>Name</label>
+              <input
+                required
+                type='text'
+                class='contact-form-input'
+                placeholder='Your name'
+                name='name'
+                id='name'
+              />
+            </div>
 
-          <div>
-            <label for='email'>Email</label>
-            <input
-              required
-              type='text'
-              class='contact__form-input'
-              name='email'
-              id='email'
-            />
-          </div>
+            <div>
+              <label for='email'>Email</label>
+              <input
+                required
+                type='text'
+                class='contact__form-input'
+                placeholder='example@gmail.com'
+                name='email'
+                id='email'
+              />
+            </div>
 
-          <div>
-            <label for='message'>Message</label>
-            <textarea
-              required
-              rows='7'
-              class='contact__form-input'
-              name='message'
-              id='message'
-            ></textarea>
-          </div>
+            <div>
+              <label for='message'>Message</label>
+              <textarea
+                required
+                rows='7'
+                class='contact__form-input'
+                name='message'
+                id='message'
+              ></textarea>
+            </div>
 
-          <button className='btn' type='submit'>
-            SUBMIT
-          </button>
-        </form>
+            <button className='btn' type='submit'>
+              SUBMIT
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );

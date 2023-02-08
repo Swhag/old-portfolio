@@ -48,7 +48,7 @@
   font-size: 1.4rem;
   text-align: center;
 
-  transition-delay: 0.8s;
+  transition-delay: 1s;
   transition-duration: 0.4s;
   transition-timing-function: ease-in-out;
 }
@@ -83,7 +83,7 @@
   align-items: center;
   width: 800px;
 
-  transition-delay: 1.6s;
+  transition-delay: 2s;
   transition-duration: 0.4s;
   transition-timing-function: ease-in-out;
 }
