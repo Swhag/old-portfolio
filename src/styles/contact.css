@@ -65,7 +65,7 @@
 }
 
 .contact-form-container {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 3px 4px 3px rgba(0, 0, 0, 0.2);
 
   max-width: 30rem;
@@ -110,6 +110,7 @@ textarea {
   letter-spacing: 0px;
   margin-bottom: 1.6rem;
   border: 1px solid #bdbdbd;
+  background-color: transparent;
 }
 
 .contact-form textarea {

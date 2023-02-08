@@ -36,7 +36,7 @@
   opacity: 1;
 }
 
-.name {
+.line-one {
   font-size: 2rem;
   text-align: center;
   transition-delay: 0.4;
@@ -44,13 +44,41 @@
   transition-timing-function: ease-in-out;
 }
 
-.welcome {
+.line-two {
   font-size: 1.4rem;
-  text-align: center;
 
   transition-delay: 1s;
   transition-duration: 0.4s;
   transition-timing-function: ease-in-out;
+
+  border-right: 0.15em solid #fff; /* The typwriter cursor */
+  white-space: nowrap;
+  /* margin: 0 auto; */
+
+  overflow: hidden;
+  animation: typing 3s steps(40, end), blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
 }
 
 @media (max-width: 768px) {
@@ -181,11 +209,5 @@
   to {
     opacity: 0;
     top: 27px;
-  }
-}
-
-@media (max-width: 768px) {
-  .mouse {
-    /* display: none; */
   }
 }

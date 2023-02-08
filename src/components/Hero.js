@@ -16,8 +16,10 @@ function Hero(props) {
   return (
     <div className='hero' ref={hero}>
       <div className='hero-inner'>
-        <h1 className={`name ${fadeIn}`}>Hi, MY NAME IS CALEB</h1>
-        <p className={`welcome ${fadeIn}`}>Frontend Developer</p>
+        <h1 className={`line-one ${fadeIn}`}>Hi, MY NAME IS CALEB</h1>
+        <div>
+          <p className={`line-two ${fadeIn}`}>Frontend Developer</p>
+        </div>
       </div>
       <div className={`button-wrapper ${fadeIn}`}>
         <div>
