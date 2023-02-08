@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 
   color: #000;
@@ -24,9 +24,6 @@
 .navbar li {
   padding: 8px 0px;
   border-bottom: 2px solid transparent;
-  transition-delay: 0.1s;
-  transition-duration: 0.1s;
-  transition-timing-function: ease-in-out;
 }
 
 .navbar li:hover {

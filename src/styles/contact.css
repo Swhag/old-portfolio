@@ -82,7 +82,6 @@
 }
 
 .contact-form-container h4 {
-  font-size: 0.8;
   margin: 2rem;
   text-align: center;
   padding: 0 2rem;
@@ -133,8 +132,26 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  .contact-container {
+    width: 100%;
+    max-width: 60rem;
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
   .contact-form-container {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
     padding: 1.2rem;
+  }
+
+  .contact-form-container h4 {
+    font-size: 0.9rem;
+  }
+
+  .image-container {
+    display: none;
   }
 
   .contact-form button {
