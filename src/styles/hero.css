@@ -51,7 +51,7 @@
   transition-duration: 0.4s;
   transition-timing-function: ease-in-out;
 
-  border-right: 0.15em solid #fff; /* The typwriter cursor */
+  border-right: 0.1em solid #fff; /* The typwriter cursor */
   white-space: nowrap;
   /* margin: 0 auto; */
 
