@@ -47,26 +47,35 @@
 .line-two {
   font-size: 1.4rem;
 
-  transition-delay: 1s;
   transition-duration: 0.4s;
   transition-timing-function: ease-in-out;
 
-  border-right: 0.1em solid #fff; /* The typwriter cursor */
+  border-right: 0.1em solid #fff;
   white-space: nowrap;
-  /* margin: 0 auto; */
 
   overflow: hidden;
-  animation: typing 3s steps(40, end), blink-caret 1s step-end infinite;
+  animation: typing 8s steps(40, end) infinite, blink-caret 1s step-end infinite;
 }
 
-/* The typing effect */
 @keyframes typing {
-  from {
+  0% {
     width: 0;
   }
 
-  to {
+  25% {
     width: 100%;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  75% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
   }
 }
 
@@ -111,7 +120,7 @@
   align-items: center;
   width: 800px;
 
-  transition-delay: 2s;
+  transition-delay: 2.2s;
   transition-duration: 0.4s;
   transition-timing-function: ease-in-out;
 }
@@ -170,7 +179,7 @@
   bottom: 3rem;
 
   transition: all 0.4s ease-in-out;
-  transition-delay: 1.6s;
+  transition-delay: 2.9s;
 }
 
 .mouse {

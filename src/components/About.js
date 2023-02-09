@@ -18,6 +18,7 @@ function About(props) {
     'Jest',
     'SASS',
     'Bootstrap',
+    'JQuery',
   ];
 
   return (
