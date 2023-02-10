@@ -1,21 +1,22 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import '../styles/contact.css';
 import { useInView } from 'react-intersection-observer';
 import emailjs from '@emailjs/browser';
 
 function Contact(props) {
   const { contact } = props;
-  const { ref: form, inView: formIsVisible } = useInView();
+  const { ref: contactForm, inView: formIsVisible } = useInView();
+  const form = useRef();
 
   function sendEmail(e) {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
-        form.current,
-        'YOUR_PUBLIC_KEY'
+        'service_m2rjxwm',
+        'template_uq7lasq',
+        e.target,
+        '9mD_2hLIAeFjt_OmF'
       )
       .then(
         (result) => {
@@ -38,12 +39,10 @@ function Contact(props) {
           className={`contact-form-container ${
             formIsVisible ? 'contact-form-animate' : ''
           }`}
+          ref={contactForm}
         >
-          <form action='#' className='contact-form' ref={form}>
-            <h4>
-              If you have questions or if you would like to say hello, contact
-              me!
-            </h4>
+          <form className='contact-form' ref={form} onSubmit={sendEmail}>
+            <h4>If you have questions contact me! caleb.kim1@outlook.com</h4>
             <div>
               <label htmlFor='name'>Name</label>
               <input
@@ -63,7 +62,7 @@ function Contact(props) {
                 type='text'
                 className='contact__form-input'
                 placeholder='example@gmail.com'
-                name='email'
+                name='user_email'
                 id='email'
               />
             </div>
@@ -80,7 +79,7 @@ function Contact(props) {
             </div>
 
             <button className='btn' type='submit'>
-              SUBMIT
+              SEND
             </button>
           </form>
         </div>
