@@ -1,11 +1,31 @@
 import React from 'react';
 import '../styles/contact.css';
 import { useInView } from 'react-intersection-observer';
+import emailjs from '@emailjs/browser';
 
 function Contact(props) {
   const { contact } = props;
   const { ref: form, inView: formIsVisible } = useInView();
-  const { ref: header, inView: headerisVisible } = useInView();
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'YOUR_SERVICE_ID',
+        'YOUR_TEMPLATE_ID',
+        form.current,
+        'YOUR_PUBLIC_KEY'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
 
   return (
     <div className='contact-section' ref={contact}>
@@ -19,17 +39,17 @@ function Contact(props) {
             formIsVisible ? 'contact-form-animate' : ''
           }`}
         >
-          <form action='#' class='contact-form' ref={form}>
+          <form action='#' className='contact-form' ref={form}>
             <h4>
               If you have questions or if you would like to say hello, contact
               me!
             </h4>
             <div>
-              <label for='name'>Name</label>
+              <label htmlFor='name'>Name</label>
               <input
                 required
                 type='text'
-                class='contact-form-input'
+                className='contact-form-input'
                 placeholder='Your name'
                 name='name'
                 id='name'
@@ -37,11 +57,11 @@ function Contact(props) {
             </div>
 
             <div>
-              <label for='email'>Email</label>
+              <label htmlFor='email'>Email</label>
               <input
                 required
                 type='text'
-                class='contact__form-input'
+                className='contact__form-input'
                 placeholder='example@gmail.com'
                 name='email'
                 id='email'
@@ -49,11 +69,11 @@ function Contact(props) {
             </div>
 
             <div>
-              <label for='message'>Message</label>
+              <label htmlFor='message'>Message</label>
               <textarea
                 required
                 rows='7'
-                class='contact__form-input'
+                className='contact__form-input'
                 name='message'
                 id='message'
               ></textarea>
