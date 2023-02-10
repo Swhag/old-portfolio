@@ -209,6 +209,17 @@
     max-width: 100%;
     gap: 30px;
     font-size: 0.9rem;
+
+    transition-duration: 0.6s;
+
+    transform: translateX(-20%);
+    transition-timing-function: ease-in-out;
+    opacity: 0;
+  }
+
+  .code-animate {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .person-container,
