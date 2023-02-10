@@ -50,6 +50,7 @@
   background-repeat: no-repeat;
   position: relative;
   transform: scale(1.2);
+  transition: all 0.4s ease-in-out;
 }
 
 .image-container::before {
@@ -157,5 +158,50 @@ textarea {
 
   .contact-form button {
     width: 100%;
+  }
+}
+
+/* ------------------------------------- */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 20px;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-message {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.modal button {
+  margin-top: 5px;
+  background-color: #fff;
+  padding: 6px 20px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    width: 350px;
   }
 }
