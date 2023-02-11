@@ -2,18 +2,19 @@ import React from 'react';
 import '../styles/footer.css';
 
 function Footer(props) {
-  const { footer } = props;
-
   return (
     <div className='footer-section'>
       <div className='footer-container'>
         <MobileIcons></MobileIcons>
+        <CopyRight></CopyRight>
       </div>
     </div>
   );
 }
 
 function MobileIcons() {
+  const email = 'caleb.kim1@outlook.com';
+
   return (
     <div className='mobile-icons'>
       <div>
@@ -35,11 +36,19 @@ function MobileIcons() {
         </a>
       </div>
       <div>
-        <a href='https://github.com/Swhag' target='_blank'>
+        <a href={`mailto:${email}`}>
           <i className='fa-regular fa-envelope'></i>
         </a>
       </div>
     </div>
+  );
+}
+
+function CopyRight() {
+  return (
+    <p className='copyright'>
+      "Built by hand, one pixel at a time" &copy; 2023, Caleb Kim
+    </p>
   );
 }
 

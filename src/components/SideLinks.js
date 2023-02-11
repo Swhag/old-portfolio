@@ -2,6 +2,8 @@ import React from 'react';
 import '../styles/sideLinks.css';
 
 function SideLinks(props) {
+  const email = 'caleb.kim1@outlook.com';
+
   return (
     <div className='side-links-container'>
       <ul>
@@ -30,13 +32,24 @@ function SideLinks(props) {
         </li>
 
         <li className='side-links email'>
-          <a href='https://github.com/Swhag' target='_blank'>
+          <a href={`mailto:${email}`}>
             <span>Email</span>
+
             <i className='fa-regular fa-envelope'></i>
           </a>
         </li>
       </ul>
     </div>
+  );
+}
+
+function EmailButton() {
+  let email = 'caleb.kim1@outlook.com';
+
+  return (
+    <a href={`mailto:${email}`}>
+      <i className='fa-regular fa-envelope'></i>
+    </a>
   );
 }
 

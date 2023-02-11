@@ -43,8 +43,7 @@
 .project-reverse {
   display: flex;
   margin-bottom: 7rem;
-  transition-duration: 0.6s;
-  transition-timing-function: ease-in-out;
+  transition: all 0.6s ease-in-out 0s;
 
   transform: translateX(-20%);
   opacity: 0;
@@ -153,8 +152,7 @@
   color: var(--text-color);
 
   letter-spacing: 3px;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;
+  transition: all 0.2s ease-in-out 0s;
 }
 
 .button-group .btn:hover {

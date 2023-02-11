@@ -33,27 +33,29 @@ function About(props) {
         <div className='about-content'>
           <div
             className={`content-left ${leftVisible ? 'content-animate' : ''}`}
+            ref={left}
           >
             <h3>Get to know me!</h3>
             <p>
-              Hello there! My name is Caleb and I'm a Front-End Developer with
-              IT and Cybersecurity background. Currently, I work as an IT
+              Hello there! My name is Caleb, and I am a Front-End Developer with
+              a background in IT and Cybersecurity. Currently, I work as an IT
               Analyst II, but I am eager to transition into a role in web
               development.
             </p>
 
-            <p ref={left}>
-              I have a solid understanding of JavaScript fundamentals and am
-              ready to adapt to any framework. My focus as a Front-End Developer
-              is on practical and minimalist design. My aim is to create
-              websites that not only look great, but also perform well and offer
-              a fantastic user experience.
+            <p>
+              My main focus as a Front-End Developer is on practical and
+              minimalist design. I aim to create websites that are not only
+              visually appealing but also perform well and provide an
+              exceptional user experience. Additionally, I have a strong grasp
+              of vanilla JavaScript fundamentals and am prepared to adapt to any
+              framework.
             </p>
 
             <p>
-              Thanks for checking out my portfolio! I hope you find it both
-              informative and fun to explore. If you have any questions or would
-              like to discuss potential opportunities, please don't hesitate to
+              Thank you for checking out my portfolio! I hope you find it both
+              informative and enjoyable to explore. If you have any questions or
+              would like to discuss potential opportunities, please feel free to
               reach out.
             </p>
 

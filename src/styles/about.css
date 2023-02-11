@@ -40,8 +40,7 @@
 .content-left,
 .content-right {
   max-width: 30rem;
-  transition-duration: 0.6s;
-  transition-timing-function: ease-in-out;
+  transition: all 0.6s ease-in-out 0s;
   opacity: 0;
 }
 
@@ -51,12 +50,6 @@
 
 .content-right {
   transform: translateY(40%);
-}
-
-.content-animate {
-  transform: translateX(0);
-  transform: translateY(0);
-  opacity: 1;
 }
 
 .content-left h3,
@@ -119,6 +112,12 @@
   }
 }
 
+.content-animate {
+  transform: translateX(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
 /* ------------------------------------- */
 
 .about-codes {
@@ -128,8 +127,7 @@
   max-width: 100%;
   gap: 30px;
 
-  transition-duration: 0.6s;
-  transition-timing-function: ease-in-out;
+  transition: all 0.6s ease-in-out 0s;
   opacity: 0;
   transform: translateY(25%);
 }
@@ -212,7 +210,7 @@
 
     transition-duration: 0.6s;
 
-    transform: translateX(-20%);
+    transform: translateY(20%);
     transition-timing-function: ease-in-out;
     opacity: 0;
   }

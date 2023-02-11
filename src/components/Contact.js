@@ -52,7 +52,7 @@ function Contact(props) {
                   required
                   type='text'
                   className='contact-form-input'
-                  placeholder='Your name'
+                  placeholder='John Doe'
                   name='name'
                   id='name'
                 />
@@ -76,6 +76,7 @@ function Contact(props) {
                   required
                   rows='7'
                   className='contact__form-input'
+                  placeholder='Hey there!'
                   name='message'
                   id='message'
                 ></textarea>

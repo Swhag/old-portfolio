@@ -159,7 +159,7 @@ function Project4(props) {
       <div className='project-content'>
         <h3>To-Do List App</h3>
         <p>
-          Task management app with ServiceNow type design and layout. Built
+          Task management app with ServiceNow-like design and layout. Built
           using HTML/CSS/Javascript. Utilized DOM manipulation and LocalStorage
           to store data.
         </p>
