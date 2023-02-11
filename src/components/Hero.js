@@ -3,10 +3,12 @@ import '../styles/hero.css';
 
 function Hero(props) {
   const { scrollToSection, hero, about, projects, contact } = props;
-  const [fadeIn, setFadeIn] = useState('start');
+  const [fadeIn, setFadeIn] = useState('');
 
   useEffect(() => {
-    setFadeIn('end');
+    setTimeout(() => {
+      setFadeIn('end');
+    }, 2100);
 
     return () => {
       setFadeIn('');
@@ -21,7 +23,7 @@ function Hero(props) {
           <p className={`line-two ${fadeIn}`}>Frontend Developer</p>
         </div>
       </div>
-      <div className={`button-wrapper ${fadeIn}`}>
+      <div className={`button-wrapper start ${fadeIn}`}>
         <div>
           <button onClick={() => scrollToSection(about)}>ABOUT</button>
         </div>
@@ -32,7 +34,7 @@ function Hero(props) {
           <button onClick={() => scrollToSection(contact)}>CONTACT</button>
         </div>
       </div>
-      <div className={`mouse-scroll-container ${fadeIn}`}>
+      <div className={`mouse-scroll-container start ${fadeIn}`}>
         <div className='mouse'></div>
       </div>
     </div>

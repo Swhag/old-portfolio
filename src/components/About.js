@@ -12,15 +12,16 @@ function About(props) {
     'HTML',
     'CSS',
     'JavaScript',
-    'React',
+    'ReactJS',
     'Redux',
-    'Git',
-    'Webpack',
-    'NPM',
-    'Jest',
+    'Axios',
+    'JQuery',
     'SASS',
     'Bootstrap',
-    'JQuery',
+    'Git',
+    'Jest',
+    'NPM',
+    'Webpack',
   ];
 
   return (
@@ -67,6 +68,7 @@ function About(props) {
             className={`content-right ${rightVisible ? 'content-animate' : ''}`}
           >
             <h3>My Skills</h3>
+
             <div className='skills' ref={right}>
               {skills.map((skill, i) => {
                 return (
