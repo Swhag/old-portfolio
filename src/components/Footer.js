@@ -28,7 +28,10 @@ function MobileIcons() {
         </a>
       </div>
       <div>
-        <a href='https://github.com/Swhag' target='_blank'>
+        <a
+          href='https://drive.google.com/file/d/1XjeV5qWXkH4z4s_FDPknXW3OmV5G7vvj/view?usp=sharing'
+          target='_blank'
+        >
           <i className='fa-regular fa-file-lines'></i>
         </a>
       </div>

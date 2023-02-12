@@ -22,7 +22,10 @@ function SideLinks(props) {
         </li>
 
         <li className='side-links resume'>
-          <a href='https://github.com/Swhag' target='_blank'>
+          <a
+            href='https://drive.google.com/file/d/1XjeV5qWXkH4z4s_FDPknXW3OmV5G7vvj/view?usp=sharing'
+            target='_blank'
+          >
             <span>Resume</span>
             <i className='fa-regular fa-file-lines'></i>
           </a>
