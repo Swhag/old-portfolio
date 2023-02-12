@@ -8,10 +8,7 @@ function SideLinks(props) {
     <div className='side-links-container'>
       <ul>
         <li className='side-links linkedin'>
-          <a
-            href='https://www.linkedin.com/in/caleb-kim-76a440209'
-            target='_blank'
-          >
+          <a href='https://www.linkedin.com/in/caleb-kim1' target='_blank'>
             <span>LinkedIn</span>
             <i className='fa-brands fa-linkedin'></i>
           </a>

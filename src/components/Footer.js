@@ -18,10 +18,7 @@ function MobileIcons() {
   return (
     <div className='mobile-icons'>
       <div>
-        <a
-          href='https://www.linkedin.com/in/caleb-kim-76a440209'
-          target='_blank'
-        >
+        <a href='https://www.linkedin.com/in/caleb-kim1' target='_blank'>
           <i className='fa-brands fa-linkedin'></i>
         </a>
       </div>
