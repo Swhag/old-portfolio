@@ -44,7 +44,7 @@ function MobileIcons() {
 function CopyRight() {
   return (
     <p className='copyright'>
-      "Built by hand, one pixel at a time" &copy; 2023, Caleb Kim
+      Built by hand, one pixel at a time &copy; 2023, Caleb Kim
     </p>
   );
 }

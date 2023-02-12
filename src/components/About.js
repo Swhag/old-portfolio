@@ -49,8 +49,8 @@ function About(props) {
               minimalist design. I aim to create websites that are not only
               visually appealing but also perform well and provide an
               exceptional user experience. Additionally, I have a strong grasp
-              of vanilla JavaScript fundamentals and am prepared to adapt to any
-              framework.
+              of vanilla JavaScript/CSS fundamentals and am prepared to adapt to
+              any framework.
             </p>
 
             <p>
