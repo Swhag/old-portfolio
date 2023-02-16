@@ -46,9 +46,7 @@ function MobileIcons() {
 
 function CopyRight() {
   return (
-    <p className='copyright'>
-      Built by hand, one pixel at a time &copy; 2023, Caleb Kim
-    </p>
+    <p className='copyright'>&copy; 2023, Caleb Kim. All rights reserved.</p>
   );
 }
 
