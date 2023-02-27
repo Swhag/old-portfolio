@@ -36,9 +36,9 @@ function Project1(props) {
         <h3>Textats - Text Analyzer</h3>
         <p>
           Textats is a user-friendly text analysis tool that provides character,
-          word, and letter statistics, as well as text summarization. Developed
-          with React, ChartJS, MeaningCloud API, and a lot of JavaScript
-          functions
+          word, letter statistics and generate a quick text summarization.
+          Developed with React, ChartJS, MeaningCloud API, and a lot of
+          JavaScript functions.
         </p>
         <div className='button-group'>
           <a
