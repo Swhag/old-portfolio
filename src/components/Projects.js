@@ -77,11 +77,11 @@ function Project2(props) {
       </video>
 
       <div className='project-content'>
-        <h3>E-Commerce Website</h3>
+        <h3>KickStore</h3>
         <p>
-          A basic e-commerce web application that retrieves products from a
-          mockup database created by me. Users can add/delete/update products in
-          the shopping cart. Built suing React, Redux, Axios, React Router, and
+          E-commerce web application that retrieves products from a mockup
+          database created by me. Users can add/delete/update products in the
+          shopping cart. Built suing React, Redux, Axios, React Router, and
           Bootstrap.
         </p>
         <div className='button-group'>
@@ -119,12 +119,12 @@ function Project3(props) {
       </video>
 
       <div className='project-content'>
-        <h3>Resumer Builder App</h3>
+        <h3>Resumer Builder</h3>
         <p>
-          A minimalist Resume-Builder web application that allows users to load
-          and save different states of input values and export the output as a
-          PDF file. I utilized this app to create my own resume. Built with
-          React, React-to-print, UUID library, and CSS.
+          Resume-Builder tool that allows users to load and save different
+          states of input values and export the output resume as a PDF file. I
+          utilized this app to create my own resume. Built with React,
+          React-to-print, UUID library, and CSS.
         </p>
         <div className='button-group'>
           <a
@@ -163,13 +163,12 @@ function Project4(props) {
       </video>
 
       <div className='project-content'>
-        <h3>Simple Weather App</h3>
+        <h3>Simple Weather</h3>
         <p>
-          This is a straightforward weather web application developed using
-          HTML, CSS, and JavaScript. Users can toggle between imperial and
-          metric systems and select different locations. utilized JavaScript
-          Async/Await function, OpenWeatherMap API calls, and DOM manipulation
-          techniques.
+          Weather web application developed using HTML, CSS, and JavaScript.
+          Users can toggle between imperial and metric systems and set different
+          locations. utilized JavaScript Async/Await function, OpenWeatherMap
+          API calls, and DOM manipulation techniques.
         </p>
         <div className='button-group'>
           <a
