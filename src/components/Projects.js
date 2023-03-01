@@ -79,7 +79,7 @@ function Project2(props) {
       <div className='project-content'>
         <h3>KickStore</h3>
         <p>
-          E-commerce web application that retrieves products from a mockup
+          E-commerce web application that retrieves products from a mock
           database created by me. Users can add/delete/update products in the
           shopping cart. Built suing React, Redux, Axios, React Router, and
           Bootstrap.
