@@ -15,21 +15,33 @@
   justify-content: flex-end;
   position: sticky;
   user-select: none;
+
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease-in-out;
 }
 
 .navbar ul {
   display: flex;
+  padding: 6px 0px;
   gap: 40px;
 }
 
 .navbar li {
-  padding: 8px 0px;
+  padding: 3px 0px;
   border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s ease-in-out;
 }
 
 .navbar li:hover {
   cursor: pointer;
   border-bottom: 2px solid var(--secondary-color);
+  transition: border-bottom 0.2s ease-in-out;
+}
+
+.navbar .active {
+  border-bottom: 2px solid var(--secondary-color);
+  color: #0028a7;
+  transition: border-bottom 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
