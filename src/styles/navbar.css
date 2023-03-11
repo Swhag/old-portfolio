@@ -15,9 +15,6 @@
   justify-content: flex-end;
   position: sticky;
   user-select: none;
-
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.3s ease-in-out;
 }
 
 .navbar ul {
@@ -28,20 +25,15 @@
 
 .navbar li {
   padding: 3px 0px;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.2s ease-in-out;
 }
 
 .navbar li:hover {
   cursor: pointer;
-  border-bottom: 2px solid var(--secondary-color);
-  transition: border-bottom 0.2s ease-in-out;
+  color: #0028a7;
 }
 
 .navbar .active {
-  border-bottom: 2px solid var(--secondary-color);
-  color: #0028a7;
-  transition: border-bottom 0.3s ease-in-out;
+  color: #0028a7 !important;
 }
 
 @media (max-width: 768px) {
@@ -58,5 +50,9 @@
 
   .navbar li {
     padding: 8px;
+  }
+
+  .navbar li:hover {
+    color: #000;
   }
 }
