@@ -20,7 +20,7 @@ function Hero(props) {
       <div className='hero-inner'>
         <h1 className={`line-one ${fadeIn}`}>Hi, MY NAME IS CALEB</h1>
         <div>
-          <p className={`line-two ${fadeIn}`}>Frontend Developer</p>
+          <p className={`line-two ${fadeIn}`}>Frontend Web Developer</p>
         </div>
       </div>
       <div className={`button-wrapper start ${fadeIn}`}>
