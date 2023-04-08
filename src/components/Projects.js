@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/projects.css';
 import { useInView } from 'react-intersection-observer';
+import cloud9 from '../images/cloud9.png';
 
 function Projects(props) {
   const { projects } = props;
@@ -27,6 +28,48 @@ function Project1(props) {
     <div
       className={`project ${myElementIsVisible ? 'project-animate' : ''}`}
       ref={project1}
+    >
+      <img src={cloud9} className='project-video' />
+
+      <div className='project-content'>
+        <h3>Cloud9 - Weather Dashboard</h3>
+        <p>
+          Cloud9 is a modern React-based weather app with a clean and responsive
+          design. It provides users with up-to-date weather conditions and
+          forecasts for any location, all while offering an intuitive and
+          user-friendly experience.
+        </p>
+        <div className='button-group'>
+          <a
+            className='btn'
+            href='https://swhag.github.io/Cloud9/'
+            target='_blank'
+          >
+            <span>Live App</span>
+          </a>
+          <a
+            className='btn'
+            href='https://github.com/Swhag/Cloud9'
+            target='_blank'
+          >
+            <span>Code</span>
+            <i className='fa-solid fa-code'></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Project2(props) {
+  const { ref: project2, inView: myElementIsVisible } = useInView();
+
+  return (
+    <div
+      className={`project-reverse ${
+        myElementIsVisible ? 'project-animate' : ''
+      }`}
+      ref={project2}
     >
       <video className='project-video' controls muted loop preload='metadata'>
         <source src='../Videos/Textats.mp4' type='video/mp4' />
@@ -62,15 +105,13 @@ function Project1(props) {
   );
 }
 
-function Project2(props) {
-  const { ref: project2, inView: myElementIsVisible } = useInView();
+function Project3(props) {
+  const { ref: project3, inView: myElementIsVisible } = useInView();
 
   return (
     <div
-      className={`project-reverse ${
-        myElementIsVisible ? 'project-animate' : ''
-      }`}
-      ref={project2}
+      className={`project ${myElementIsVisible ? 'project-animate' : ''}`}
+      ref={project3}
     >
       <video className='project-video' controls muted loop preload='metadata'>
         <source src='../Videos/e-commerce.mp4' type='video/mp4' />
@@ -106,13 +147,15 @@ function Project2(props) {
   );
 }
 
-function Project3(props) {
-  const { ref: project3, inView: myElementIsVisible } = useInView();
+function Project4(props) {
+  const { ref: project4, inView: myElementIsVisible } = useInView();
 
   return (
     <div
-      className={`project ${myElementIsVisible ? 'project-animate' : ''}`}
-      ref={project3}
+      className={`project-reverse ${
+        myElementIsVisible ? 'project-animate' : ''
+      }`}
+      ref={project4}
     >
       <video className='project-video' controls muted loop preload='metadata'>
         <source src='../Videos/CVBuilder.mp4' type='video/mp4' />
@@ -122,9 +165,8 @@ function Project3(props) {
         <h3>Resumer Builder</h3>
         <p>
           Resume-Builder tool that allows users to load and save different
-          states of input values and export the output resume as a PDF file. I
-          utilized this app to create my own resume. Built with React,
-          React-to-print, UUID library, and CSS.
+          states of input values and export the output resume as a PDF file.
+          Built with React, React-to-print, UUID library, and CSS.
         </p>
         <div className='button-group'>
           <a
@@ -137,50 +179,6 @@ function Project3(props) {
           <a
             className='btn'
             href='https://github.com/Swhag/Resume-Builder-App'
-            target='_blank'
-          >
-            <span>Code</span>
-            <i className='fa-solid fa-code'></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Project4(props) {
-  const { ref: project4, inView: myElementIsVisible } = useInView();
-
-  return (
-    <div
-      className={`project-reverse ${
-        myElementIsVisible ? 'project-animate' : ''
-      }`}
-      ref={project4}
-    >
-      <video className='project-video' controls muted loop preload='metadata'>
-        <source src='../Videos/WeatherApp.mp4' type='video/mp4' />
-      </video>
-
-      <div className='project-content'>
-        <h3>Simple Weather</h3>
-        <p>
-          Weather web application developed using HTML, CSS, and JavaScript.
-          Users can toggle between imperial and metric systems and set different
-          locations. utilized JavaScript Async/Await function, OpenWeatherMap
-          API calls, and DOM manipulation techniques.
-        </p>
-        <div className='button-group'>
-          <a
-            className='btn'
-            href='https://swhag.github.io/Weather-App/'
-            target='_blank'
-          >
-            <span>Live App</span>
-          </a>
-          <a
-            className='btn'
-            href='https://github.com/Swhag/Weather-App'
             target='_blank'
           >
             <span>Code</span>
