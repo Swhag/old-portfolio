@@ -55,10 +55,9 @@ function About(props) {
             </p>
 
             <p>
-              Thank you for checking out my portfolio! I hope you find it both
-              informative and enjoyable to explore. If you have any questions or
-              would like to discuss potential opportunities, please feel free to
-              reach out.
+              Thank you for checking out my portfolio! If you have any questions
+              or would like to discuss potential opportunities, please feel free
+              to reach out.
             </p>
 
             <button className='btn' onClick={() => scrollToSection(contact)}>
