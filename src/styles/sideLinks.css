@@ -78,13 +78,20 @@
   font-size: 0.9rem;
 }
 
-.side-links i {
-  font-size: 1.7rem;
-  margin-right: 10px;
+.linkedin-icon {
+  margin-right: 4px;
 }
 
-.fa-file-lines {
-  margin-left: 3px;
+.github-icon {
+  margin-right: 5px;
+}
+
+.resume-icon {
+  margin-right: 2px;
+}
+
+.side-links .email-icon {
+  margin-right: 8px;
 }
 
 @media (max-width: 1024px) {

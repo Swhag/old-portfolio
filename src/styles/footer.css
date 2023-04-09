@@ -1,13 +1,13 @@
 .footer-container {
   background-color: #1a1a2d;
-  /* background-color: rgba(26, 26, 45, 1); */
 
   color: #fff;
+  padding: 2rem;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
 }
 
 /* -------------------------------- */
@@ -19,35 +19,19 @@
   gap: 60px;
 }
 
-.mobile-icons i {
-  width: 50px;
-  height: 50px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 2rem;
-}
-
-.mobile-icons i:hover {
-  transform: scale(1.1);
-}
-
-.mobile-icons .fa-linkedin {
+.linkedin-icon,
+.github-icon,
+.resume-icon,
+.mobile-icons .email-icon {
   color: var(--text-color);
+  transition: transform 0.2s ease;
 }
 
-.mobile-icons .fa-github {
-  color: var(--text-color);
-}
-
-.mobile-icons .fa-file-lines {
-  color: var(--text-color);
-}
-
-.mobile-icons .fa-envelope {
-  color: var(--text-color);
+.linkedin-icon:hover,
+.github-icon:hover,
+.resume-icon:hover,
+.mobile-icons .email-icon:hover {
+  transform: scale(1.2);
 }
 
 @media (max-width: 1024px) {

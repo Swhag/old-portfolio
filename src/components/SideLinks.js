@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/sideLinks.css';
+import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from 'react-icons/ai';
+import { IoDocumentTextSharp } from 'react-icons/io5';
 
 function SideLinks(props) {
   const email = 'caleb.kim1@outlook.com';
@@ -10,14 +12,18 @@ function SideLinks(props) {
         <li className='side-links linkedin'>
           <a href='https://www.linkedin.com/in/caleb-kim1' target='_blank'>
             <span>LinkedIn</span>
-            <i className='fa-brands fa-linkedin'></i>
+            <div className='linkedin-icon'>
+              <AiFillLinkedin size={32} />
+            </div>
           </a>
         </li>
 
         <li className='side-links github'>
           <a href='https://github.com/Swhag' target='_blank'>
             <span>GitHub</span>
-            <i className='fa-brands fa-github'></i>
+            <div className='github-icon'>
+              <AiFillGithub size={32} />
+            </div>
           </a>
         </li>
 
@@ -27,29 +33,22 @@ function SideLinks(props) {
             target='_blank'
           >
             <span>Resume</span>
-            <i className='fa-regular fa-file-lines'></i>
+            <div className='resume-icon'>
+              <IoDocumentTextSharp size={32} />
+            </div>
           </a>
         </li>
 
         <li className='side-links email'>
           <a href={`mailto:${email}`}>
             <span>Email</span>
-
-            <i className='fa-regular fa-envelope'></i>
+            <div className='email-icon'>
+              <AiOutlineMail size={30} />
+            </div>
           </a>
         </li>
       </ul>
     </div>
-  );
-}
-
-function EmailButton() {
-  let email = 'caleb.kim1@outlook.com';
-
-  return (
-    <a href={`mailto:${email}`}>
-      <i className='fa-regular fa-envelope'></i>
-    </a>
   );
 }
 

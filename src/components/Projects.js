@@ -1,7 +1,9 @@
 import React from 'react';
 import '../styles/projects.css';
-import { useInView } from 'react-intersection-observer';
 import cloud9 from '../images/cloud9.png';
+import { useInView } from 'react-intersection-observer';
+import { BiLinkExternal } from 'react-icons/bi';
+import { HiOutlineCode } from 'react-icons/hi';
 
 function Projects(props) {
   const { projects } = props;
@@ -46,6 +48,9 @@ function Project1(props) {
             target='_blank'
           >
             <span>Live App</span>
+            <div className='icon-container'>
+              <BiLinkExternal size={22} />
+            </div>
           </a>
           <a
             className='btn'
@@ -53,7 +58,9 @@ function Project1(props) {
             target='_blank'
           >
             <span>Code</span>
-            <i className='fa-solid fa-code'></i>
+            <div className='icon-container'>
+              <HiOutlineCode size={22} />
+            </div>
           </a>
         </div>
       </div>
@@ -90,6 +97,9 @@ function Project2(props) {
             target='_blank'
           >
             <span>Live App</span>
+            <div className='icon-container'>
+              <BiLinkExternal size={22} />
+            </div>
           </a>
           <a
             className='btn'
@@ -97,7 +107,9 @@ function Project2(props) {
             target='_blank'
           >
             <span>Code</span>
-            <i className='fa-solid fa-code'></i>
+            <div className='icon-container'>
+              <HiOutlineCode size={22} />
+            </div>
           </a>
         </div>
       </div>
@@ -132,6 +144,9 @@ function Project3(props) {
             target='_blank'
           >
             <span>Live App</span>
+            <div className='icon-container'>
+              <BiLinkExternal size={22} />
+            </div>
           </a>
           <a
             className='btn'
@@ -139,7 +154,9 @@ function Project3(props) {
             target='_blank'
           >
             <span>Code</span>
-            <i className='fa-solid fa-code'></i>
+            <div className='icon-container'>
+              <HiOutlineCode size={22} />
+            </div>
           </a>
         </div>
       </div>
@@ -175,6 +192,9 @@ function Project4(props) {
             target='_blank'
           >
             <span>Live App</span>
+            <div className='icon-container'>
+              <BiLinkExternal size={22} />
+            </div>
           </a>
           <a
             className='btn'
@@ -182,7 +202,9 @@ function Project4(props) {
             target='_blank'
           >
             <span>Code</span>
-            <i className='fa-solid fa-code'></i>
+            <div className='icon-container'>
+              <HiOutlineCode size={22} />
+            </div>
           </a>
         </div>
       </div>
