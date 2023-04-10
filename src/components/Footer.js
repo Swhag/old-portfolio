@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/footer.css';
+import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from 'react-icons/ai';
+import { IoDocumentTextSharp } from 'react-icons/io5';
 
 function Footer(props) {
   return (
@@ -19,12 +21,16 @@ function MobileIcons() {
     <div className='mobile-icons'>
       <div>
         <a href='https://www.linkedin.com/in/caleb-kim1' target='_blank'>
-          <i className='fa-brands fa-linkedin'></i>
+          <div className='linkedin-icon'>
+            <AiFillLinkedin size={36} />
+          </div>
         </a>
       </div>
       <div>
         <a href='https://github.com/Swhag' target='_blank'>
-          <i className='fa-brands fa-github'></i>
+          <div className='github-icon'>
+            <AiFillGithub size={36} />
+          </div>
         </a>
       </div>
       <div>
@@ -32,12 +38,16 @@ function MobileIcons() {
           href='https://drive.google.com/file/d/1XjeV5qWXkH4z4s_FDPknXW3OmV5G7vvj/view?usp=sharing'
           target='_blank'
         >
-          <i className='fa-regular fa-file-lines'></i>
+          <div className='resume-icon'>
+            <IoDocumentTextSharp size={36} />
+          </div>
         </a>
       </div>
       <div>
         <a href={`mailto:${email}`}>
-          <i className='fa-regular fa-envelope'></i>
+          <div className='email-icon'>
+            <AiOutlineMail size={36} />
+          </div>
         </a>
       </div>
     </div>

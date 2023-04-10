@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/navbar.css';
+import { AiOutlineHome } from 'react-icons/ai';
+import { CgProfile } from 'react-icons/cg';
+import { FaProjectDiagram } from 'react-icons/fa';
+import { RiContactsLine } from 'react-icons/ri';
 
 function Navbar(props) {
   const { scrollToSection, hero, about, projects, contact } = props;
@@ -41,25 +45,40 @@ function Navbar(props) {
           className={activeSection === 'hero' ? 'active' : ''}
           onClick={() => scrollToSection(hero)}
         >
-          Home
+          <div className='navbar-icon'>
+            <AiOutlineHome size={20} />
+          </div>
+          <span className='nav-item'>Home</span>
         </li>
         <li
           className={activeSection === 'about' ? 'active' : ''}
           onClick={() => scrollToSection(about)}
         >
-          About
+          <div className='navbar-icon'>
+            <CgProfile size={20} />
+          </div>
+
+          <span className='nav-item'>About</span>
         </li>
         <li
           className={activeSection === 'projects' ? 'active' : ''}
           onClick={() => scrollToSection(projects)}
         >
-          Projects
+          <div className='navbar-icon'>
+            <FaProjectDiagram size={16} />
+          </div>
+
+          <span className='nav-item'>Projects</span>
         </li>
         <li
           className={activeSection === 'contact' ? 'active' : ''}
           onClick={() => scrollToSection(contact)}
         >
-          Contact
+          <div className='navbar-icon'>
+            <RiContactsLine size={18} />
+          </div>
+
+          <span className='nav-item'>Contact</span>
         </li>
       </ul>
     </div>

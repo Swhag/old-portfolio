@@ -1,14 +1,19 @@
 import React, { useRef } from 'react';
-
 import './styles/App.css';
+
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import Hero from './sections/Hero';
 import SideLinks from './components/SideLinks';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import About from './sections/About';
+import Projects from './sections/Projects';
+import Contact from './sections/Contact';
 import Footer from './components/Footer';
 import ScrollTop from './components/ScrollTop';
+import ParticleBackground from './components/ParticleBackground';
+
+import Lottie from './components/Lottie';
+import codingAnimationData from './lottie/coding.json';
+import cloudAnimationData from './lottie/cloudinfra.json';
 
 function App() {
   const hero = useRef(null);
@@ -25,31 +30,35 @@ function App() {
 
   return (
     <div className='App'>
+      <ParticleBackground />
+
       <Navbar
         scrollToSection={scrollToSection}
         hero={hero}
         about={about}
         projects={projects}
         contact={contact}
-      ></Navbar>
+      />
+
       <Hero
         scrollToSection={scrollToSection}
         hero={hero}
         about={about}
         projects={projects}
         contact={contact}
-      ></Hero>
-      <SideLinks></SideLinks>
-
+      />
+      <SideLinks />
       <About
         scrollToSection={scrollToSection}
         about={about}
         contact={contact}
-      ></About>
-      <Projects projects={projects}></Projects>
-      <Contact contact={contact}></Contact>
-      <Footer></Footer>
-      <ScrollTop></ScrollTop>
+      />
+      {/* <Lottie animationDataFile={cloudAnimationData} /> */}
+
+      <Projects projects={projects} />
+      <Contact contact={contact} />
+      <Footer />
+      <ScrollTop />
     </div>
   );
 }

@@ -2,10 +2,14 @@ import '../styles/about.css';
 import React, { Fragment } from 'react';
 import { useInView } from 'react-intersection-observer';
 
+import Lottie from '../components/Lottie';
+import codingAnimationData from '../lottie/coding.json';
+import cloudAnimationData from '../lottie/cloudinfra.json';
+
 function About(props) {
   const { ref: left, inView: leftVisible } = useInView();
   const { ref: right, inView: rightVisible } = useInView();
-  const { ref: code, inView: codeVisible } = useInView();
+  const { ref: bottom, inView: bottomVisible } = useInView();
 
   const { scrollToSection, about, contact } = props;
   const skills = [
@@ -27,66 +31,65 @@ function About(props) {
 
   return (
     <div className='about-section' ref={about}>
+      <div className='about-background-container'></div>
+
       <div className='about-header'>
         <h1>ABOUT ME</h1>
       </div>
 
       <div className='about-container'>
         <div className='about-content'>
-          <div
-            className={`content-left ${leftVisible ? 'content-animate' : ''}`}
-            ref={left}
-          >
-            <h3>Get to know me!</h3>
-            <p>
-              Hello there! My name is Caleb, and I am a Front-End Developer with
-              a background in IT and Cybersecurity. Currently, I work as an IT
-              Analyst II, but I am eager to transition into a role in web
-              development.
-            </p>
+          <div className='content-group'>
+            <div
+              className={`content-left ${leftVisible ? 'content-animate' : ''}`}
+              ref={left}
+            >
+              <Lottie animationDataFile={codingAnimationData} />
+            </div>
+            <div
+              className={`content-right ${
+                rightVisible ? 'content-animate' : ''
+              }`}
+              ref={right}
+            >
+              <h3>Get to know me!</h3>
+              <p>
+                Hello there! My name is Caleb, and I am a Front-End Developer
+                with a background in IT and Cybersecurity. Currently, I work as
+                an IT Analyst II, but I am eager to transition into a role in
+                web development.
+              </p>
 
-            <p>
-              My main focus as a Front-End Developer is on practical and
-              minimalist design. I aim to create websites that are not only
-              visually appealing but also perform well and provide an
-              exceptional user experience. Additionally, I have a strong grasp
-              of vanilla JavaScript/CSS fundamentals and am prepared to adapt to
-              any framework.
-            </p>
+              <p>
+                My main focus as a Front-End Developer is on practical and
+                minimalist design. I aim to create websites that are not only
+                visually appealing but also perform well and provide an
+                exceptional user experience. Additionally, I have a strong grasp
+                of vanilla JavaScript/CSS fundamentals and am prepared to adapt
+                to any framework.
+              </p>
 
-            <p>
-              Thank you for checking out my portfolio! If you have any questions
-              or would like to discuss potential opportunities, please feel free
-              to reach out.
-            </p>
+              <p>
+                Thank you for checking out my portfolio! If you have any
+                questions or would like to discuss potential opportunities,
+                please feel free to reach out.
+              </p>
 
-            <button className='btn' onClick={() => scrollToSection(contact)}>
-              CONTACT
-            </button>
-          </div>
-          <div
-            className={`content-right ${rightVisible ? 'content-animate' : ''}`}
-          >
-            <h3>My Skills</h3>
-
-            <div className='skills' ref={right}>
-              {skills.map((skill, i) => {
-                return (
-                  <button key={i} className='skill-tag'>
-                    {skill}
-                  </button>
-                );
-              })}
+              <button className='btn' onClick={() => scrollToSection(contact)}>
+                CONTACT
+              </button>
             </div>
           </div>
-        </div>
 
-        <div
-          className={`about-codes ${codeVisible ? 'code-animate' : ''}`}
-          ref={code}
-        >
-          <CodeBlock1></CodeBlock1>
-          <CodeBlock2></CodeBlock2>
+          <div
+            className={`content-bottom ${
+              bottomVisible ? 'content-animate' : ''
+            }`}
+            ref={bottom}
+          >
+            <CodeBlock1></CodeBlock1>
+            <CodeBlock2></CodeBlock2>
+          </div>
         </div>
       </div>
     </div>

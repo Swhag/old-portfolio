@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { IoIosArrowUp } from 'react-icons/io';
 
 function ScrollTop() {
   const [showBackToTopButton, setShowBackToTopButton] = useState(false);
@@ -21,7 +22,7 @@ function ScrollTop() {
     <>
       {showBackToTopButton && (
         <div className='back-to-top-button' onClick={handleBackToTopClick}>
-          <i className='fa-solid fa-chevron-up'></i>
+          <IoIosArrowUp />
         </div>
       )}
     </>

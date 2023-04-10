@@ -34,7 +34,7 @@ function Contact(props) {
     <>
       <div className='contact-section' ref={contact}>
         <div className='contact-header'>
-          <h1>CONTACT</h1>
+          <h1>CONTACT ME</h1>
         </div>
         <div className='contact-container'>
           <div className='image-container'></div>

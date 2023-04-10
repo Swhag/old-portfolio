@@ -10,8 +10,10 @@ function Projects(props) {
 
   return (
     <div className='projects-section' ref={projects}>
+      <div className='projects-background-container'></div>
+
       <div className='projects-header'>
-        <h1>PROJECTS</h1>
+        <h1>MY PROJECTS</h1>
       </div>
       <div className='projects-container'>
         <Project1></Project1>
@@ -73,9 +75,7 @@ function Project2(props) {
 
   return (
     <div
-      className={`project-reverse ${
-        myElementIsVisible ? 'project-animate' : ''
-      }`}
+      className={`project ${myElementIsVisible ? 'project-animate' : ''}`}
       ref={project2}
     >
       <video className='project-video' controls muted loop preload='metadata'>
@@ -169,9 +169,7 @@ function Project4(props) {
 
   return (
     <div
-      className={`project-reverse ${
-        myElementIsVisible ? 'project-animate' : ''
-      }`}
+      className={`project ${myElementIsVisible ? 'project-animate' : ''}`}
       ref={project4}
     >
       <video className='project-video' controls muted loop preload='metadata'>
