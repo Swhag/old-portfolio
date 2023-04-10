@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: #1a1a2d;
+  /* background-color: #1a1a2d; */
 
   color: #fff;
   padding: 2rem;
@@ -17,20 +17,21 @@
 .mobile-icons {
   display: flex;
   gap: 60px;
+  z-index: 10;
 }
 
 .linkedin-icon,
 .github-icon,
 .resume-icon,
-.mobile-icons .email-icon {
-  color: var(--text-color);
+.email-icon {
+  color: #fff;
   transition: transform 0.2s ease;
 }
 
 .linkedin-icon:hover,
 .github-icon:hover,
 .resume-icon:hover,
-.mobile-icons .email-icon:hover {
+.email-icon:hover {
   transform: scale(1.2);
 }
 
