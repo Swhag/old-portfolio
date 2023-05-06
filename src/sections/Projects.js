@@ -81,7 +81,10 @@ function Project2(props) {
       ref={project2}
     >
       <video className='project-video' controls muted loop preload='metadata'>
-        <source src='/Videos/Textats.mp4' type='video/mp4' />
+        <source
+          src={`${process.env.PUBLIC_URL}/videos/Textats.mp4`}
+          type='video/mp4'
+        />
       </video>
 
       <div className='project-content'>
@@ -128,7 +131,7 @@ function Project3(props) {
       ref={project3}
     >
       <video className='project-video' controls muted loop preload='metadata'>
-        <source src='/Videos/e-commerce.mp4' type='video/mp4' />
+        <source src='/videos/e-commerce.mp4' type='video/mp4' />
       </video>
 
       <div className='project-content'>
@@ -177,7 +180,7 @@ function Project4(props) {
       ref={project4}
     >
       <video className='project-video' controls muted loop preload='metadata'>
-        <source src='/Videos/CVBuilder.mp4' type='video/mp4' />
+        <source src='/videos/CVBuilder.mp4' type='video/mp4' />
       </video>
 
       <div className='project-content'>
